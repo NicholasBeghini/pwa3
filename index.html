@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <button id="menu-btn" aria-label="Abrir menu">☰</button>
+        <h1>Meu App PWA</h1>
+    </header>
+
+    <nav id="side-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#settings">Configurações</a></li>
+        </ul>
+    </nav>
+
+    <nav class="bottom-nav">
+        <a href="#home" class="nav-item">
+            <span class="icon">🏠</span>
+            <span class="label">Home</span>
+        </a>
+        <a href="#about" class="nav-item">
+            <span class="icon">ℹ️</span>
+            <span class="label">Sobre</span>
+        </a>
+        <a href="#settings" class="nav-item">
+            <span class="icon">⚙️</span>
+            <span class="label">Configurações</span>
+        </a>
+    </nav>
+
+    <main id="content">
+        <section id="home">
+            <h2>Bem-vindo!</h2>
+            <p>Este é o conteúdo principal da sua PWA. O design é responsivo e se adapta a qualquer dispositivo.</p>
+        </section>
+
+        <section id="settings">
+            <h2>Configurações</h2>
+            <div class="setting-item">
+                <label for="theme-toggle">Modo Escuro:</label>
+                <input type="checkbox" id="theme-toggle">
+            </div>
+            <p>Outras opções de configuração podem ser adicionadas aqui.</p>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="service-worker.js"></script>
+</body>
+</html>
